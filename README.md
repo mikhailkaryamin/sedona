@@ -1,1 +1,1 @@
-# sedona
+Проект Sedona
