@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.button {
+  border: 0;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.main-navigation {
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:focus {
+  opacity: 0.3;
+}
+
+.site-navigation a:active {
+  color: #766357;
+}
+
+.sedona-welcome {
+  background-image: url(../img/background-photo.jpg);
+}
+
+.advantage-slogan {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.advantage-list-headline {
+  line-height: 26px;
+}
+
+.advantage-list,
+.advantage-list-city {
+  list-style: none;
+}
+
+.advantage-item {
+  text-align: center;
+}
+
+.advantage-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.advantage-item-devil-bridge,
+.advantage-item-real-town {
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+}
+
+.advantage-item-real-town {
+  background-image: url("../img/advantage-background-1.jpg");
+}
+
+.advantage-item-devil-bridge {
+  background-image: url("../img/advantage-background-2.jpg");
+}
+
+.map {
+  width: 100%;
+  height: 484px;
+  background-image: url("../img/map.jpg");
+}
+
+.hotel-search {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.hotel-search-button {
+  background-color: #766357;
+}
+
+.modal-login {
+  background-color: #ffffff;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.form-search input {
+  font: inherit;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.form-search input::placeholder {
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.modal-login-button {
+  background-color: #81b3d2;
+}
+
+.main-footer {
+  background-color: #fdfdfd;
+}
+
+.footer-tag {
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social_list {
+  list-style: none;
+}
