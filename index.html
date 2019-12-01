@@ -14,26 +14,28 @@
   <div class="wrapper">
     <header class="main-header">
       <nav class="main-navigation">
-        <a href="#" class="main-header-logo">
-          <img src="../img/logo-sedona.svg" width="140" height="72" alt="Логотип Sedona">
-        </a>
-        <ul class="site-navigation">
-          <li>
+        <ul class="info-navigation">
+          <li class="info-navigation-item">
             <a href="#">
               Информация
             </a>
           </li>
-          <li>
+          <li class="info-navigation-item">
             <a href="#">
               Фото и видео
             </a>
           </li>
-          <li>
+        </ul>
+        <a class="main-header-logo">
+          <img src="../img/logo-sedona.svg" width="140" height="72" alt="Логотип Sedona">
+        </a>
+        <ul class="order-navigation">
+          <li class="order-navigation-item">
             <a href="#">
               Карта штата
             </a>
           </li>
-          <li>
+          <li class="order-navigation-item">
             <a href="search.html">
               Гостиницы
             </a>
@@ -52,22 +54,22 @@
         <h2 class="visually-hidden">
           Преимущества
         </h2>
-        <p class="advantage-slogan">
-          Седона — небольшой городок в Аризоне,
+        <p class="advantage-text advantage-slogan">
+          Седона — небольшой городок в Аризоне,<br>
           заслуживающий большего!
         </p>
-        <p class="advantage-list-headline">
+        <p class="advantage-text advantage-list-headline">
           Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
         </p>
         <ul class="advantage-list">
-          <li class="advantage-item advantage-item-real-town">
+          <li class="advantage-list-item advantage-item-real-town">
             <h3>Настоящий <br> городок</h3>
             <p>
               — №1 — <br>
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
           </li>
-          <li class="advantage-item advantage-item-devil-bridge">
+          <li class="advantage-list-item advantage-item-devil-bridge">
             <h3>Там есть<br>
               Мост дьявола
             </h3>
@@ -76,7 +78,7 @@
               Да, по нему можно пройти! Если конечно вы осмелитесь
             </p>
           </li>
-          <li class="advantage-item">
+          <li class="advantage-list-item">
             <h3>Небольшая<br>
               площадь</h3>
             <p>
@@ -85,7 +87,7 @@
               находятся очень близко
             </p>
           </li>
-          <li class="advantage-item">
+          <li class="advantage-list-item">
             <h3>Красивая<br>
               дорога</h3>
             <p>
@@ -94,7 +96,7 @@
               не скучно!
             </p>
           </li>
-          <li class="advantage-item">
+          <li class="advantage-list-item">
             <h3>Мало<br>
               туристов</h3>
             <p>
@@ -102,21 +104,21 @@
               Большинство едет в гранд каньон
               и толпится там</p>
           </li>
-          <li class="advantage-item">
+          <li class="advantage-item-city">
             <ul class="advantage-list-city">
-              <li class="advantage-item">
+              <li class="advantage-list-city-item">
                 <h3>Жильё</h3>
                 <p>
                   Рекомендуем пожить в настоящем мотеле, всё как в кино!
                 </p>
               </li>
-              <li class="advantage-item">
+              <li class="advantage-list-city-item">
                 <h3>Еда</h3>
                 <p>
                   Всегда заказывайте фирменный бургер, вы не разочаруетесь!
                 </p>
               </li>
-              <li class="advantage-item">
+              <li class="advantage-list-city-item">
                 <h3>Сувениры</h3>
                 <p>
                   Не только китайского, но и местного производства!
@@ -130,7 +132,7 @@
         <h2 class="visually-hidden">
           Поиск гостиницы
         </h2>
-        <b>
+        <b class="hotel-search-question">
           Заинтересовались?
         </b>
         <p>
@@ -146,67 +148,71 @@
       </section>
     </main>
     <footer class="main-footer">
-      <span class="footer-tag">
-        #visitSEDONA
-      </span>
-      <div class="footer-social">
-        <ul class="footer-social_list">
-          <li>
-            <a href="#">
-              Twitter
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              facebook
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              youtube
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-copyright">
-        <b>Website by</b>
-        <a href="https://htmlacademy.ru">
-          <img src="./img/logo-htmlacademy.svg" width="115" height="41" alt="HTML academy">
-        </a>
+      <div class="main-footer-container">
+        <span class="footer-tag">
+          #visitSEDONA
+        </span>
+        <div class="footer-social">
+          <ul class="footer-social_list">
+            <li>
+              <a href="#">
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                facebook
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                youtube
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-copyright">
+          <b>Website by</b>
+          <a href="https://htmlacademy.ru">
+            <img src="./img/logo-htmlacademy.svg" width="115" height="41" alt="HTML academy">
+          </a>
+        </div>
       </div>
     </footer>
 
     <section class="modal modal-login">
-      <h2 class="visually-hidden">
-        Форма поиска
-      </h2>
-      <form class="form-search" method="POST" action="https://echo.htmlacademy.ru">
-        <p>
-          <label>
-            Дата заезда:
-            <input type="text" name="start" placeholder="24 апреля 2017">
-          </label>
-        </p>
-        <p>
-          <label>
-            Дата выезда:
-            <input type="text" name="finish" placeholder="4 июля 2017">
-          </label>
-        </p>
-        <p>
-          <label>
-            Взрослые:
-            <input type="text" name="finish" placeholder="2">
-          </label>
-        </p>
-        <p>
-          <label>
-            Дети:
-            <input type="text" name="finish" placeholder="0">
-          </label>
-        </p>
-        <button class="button modal-login-button" type="submit">Найти</button>
-      </form>
+      <div class="modal-login-container">
+        <h2 class="visually-hidden">
+          Форма поиска
+        </h2>
+        <form class="form-search" method="POST" action="https://echo.htmlacademy.ru">
+          <p>
+            <label>
+              Дата заезда:
+              <input type="text" name="start" placeholder="24 апреля 2017">
+            </label>
+          </p>
+          <p>
+            <label>
+              Дата выезда:
+              <input type="text" name="finish" placeholder="4 июля 2017">
+            </label>
+          </p>
+          <p>
+            <label>
+              Взрослые:
+              <input type="text" name="finish" placeholder="2">
+            </label>
+          </p>
+          <p>
+            <label>
+              Дети:
+              <input type="text" name="finish" placeholder="0">
+            </label>
+          </p>
+          <button class="button modal-login-button" type="submit">Найти</button>
+        </form>
+      </div>
     </section>
   </div>
 </body>
