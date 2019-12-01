@@ -17,6 +17,22 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .wrapper {
   width: 1200px;
   margin: 0 auto;
@@ -33,39 +49,89 @@ a {
   text-transform: uppercase;
 }
 
+.main-header {
+  min-height: 70px;
+  margin-bottom: -17px;
+}
+
+.main-header-logo img {
+  display: block;
+}
+
 .main-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 73px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
 }
 
-.site-navigation {
+.main-navigation ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
-.site-navigation a {
+.main-navigation a {
   color: #000000;
 }
 
-.site-navigation a:hover {
+.main-navigation a:hover {
   color: #81b3d2;
 }
 
-.site-navigation a:hover {
+.main-navigation a:hover {
   color: #81b3d2;
 }
 
-.site-navigation a:focus {
+.main-navigation a:focus {
   opacity: 0.3;
 }
 
-.site-navigation a:active {
+.main-navigation a:active {
   color: #766357;
 }
 
+.info-navigation {
+  display: flex;
+  width: 460px;
+  flex-wrap: wrap;
+}
+
+.info-navigation li {
+  min-height: 56px;
+}
+
+.info-navigation a {
+  display: block;
+}
+
+.info-navigation li:nth-child(odd) {
+  width: 240px;
+}
+
+.order-navigation {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 460px;
+}
+
+.order-navigation li:nth-child(even) {
+  width: 240px;
+  text-align: right;
+}
+
 .sedona-welcome {
+  height: 510px;
+  text-align: center;
   background-image: url(../img/background-photo.jpg);
+}
+
+.sedona-logo {
+  padding-top: 76px;
 }
 
 .advantage-slogan {
@@ -80,30 +146,67 @@ a {
 
 .advantage-list,
 .advantage-list-city {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantage-list,
+.advantage-list-city {
+  width: 1200px;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
-.advantage-item {
-  text-align: center;
+.advantage-list li,
+.advantage-list-city li {
+  width: 33%;
 }
 
-.advantage-item h3 {
+.advantage-list-item {
+  text-align: center;
+  min-height: 256px;
+}
+
+.advantage-list-item h3 {
   font-size: 21px;
   line-height: 21px;
 }
 
 .advantage-item-devil-bridge,
 .advantage-item-real-town {
+  width: 100%;
   background-color: #81b3d2;
   background-repeat: no-repeat;
 }
 
 .advantage-item-real-town {
+  order: -2;
+  padding-right: 800px;
+  background-position-x: right;
   background-image: url("../img/advantage-background-1.jpg");
 }
 
 .advantage-item-devil-bridge {
+  padding-left: 800px;
+  background-position-x: left;
   background-image: url("../img/advantage-background-2.jpg");
+}
+
+.advantage-text {
+  text-align: center;
+}
+
+.advantage-item-city {
+  order: -1;
+}
+
+.advantage-list-city {
+  background-color: #ffffff;
+}
+
+.advantage-list-city-item {
+  min-height: 330px;
 }
 
 .map {
@@ -117,8 +220,18 @@ a {
   text-align: center;
 }
 
+.hotel-search-question {
+  font-size: 30px;
+  line-height: 36px;
+}
+
 .hotel-search-button {
   background-color: #766357;
+}
+
+.main-footer-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .modal-login {
@@ -161,3 +274,142 @@ a {
 .footer-social_list {
   list-style: none;
 }
+
+.modal-login {
+  width: 568px;
+}
+
+.modal-login-container {
+  padding: 55px;
+}
+
+.filters {
+  background-image: url(../img/background-photo-search.jpg);
+}
+
+.filter-search {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.filter-search ul {
+  list-style: none;
+}
+
+.catalog {
+  background-color: #fefefe;
+}
+
+.search-settings {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 73px;
+}
+
+.result-search b {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.sort {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort strong {
+  font-weight: 400;
+}
+
+.sort-types,
+.sort-up-down {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+.sort-types a {
+  color: #000000;
+  opacity: 0.3;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-type-current a {
+  color: #81b3d2;
+  opacity: 1;
+  border-bottom: none;
+}
+
+.catalog-list {
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-list li {
+  padding: 0 73px;
+}
+
+.catalog-list h3 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.catalog-item-text  {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.catalog-item-info {
+  padding-left: 165px;
+}
+
+.catalog-item {
+  background-repeat: no-repeat;
+  background-position-x: 73px;
+}
+
+.catalog-item-amara {
+  background-image: url(../img/catalog-amara.jpg);
+}
+
+.catalog-item-desert {
+  background-image: url(../img/catalog-desert.jpg);
+}
+
+.catalog-item-villas {
+  background-image: url(../img/catalog-villas.jpg);
+}
+
+.button-catalog {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  border: none;
+}
+
+.details {
+  background-color: #81b3d2;
+}
+
+.to-book {
+  background-color: #766357;
+}
+
+.catalog-item-rating {
+  font-size: 14px;
+  line-height: 21px;
+  background-color: #f2f2f2;
+  color: #666666;
+}
+
+.wrapper {
+  width: 1200px;
+  padding: 0 40px;
+}
+
+
