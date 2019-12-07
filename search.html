@@ -6,8 +6,8 @@
   <title>
     Поиск гостиницы
   </title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet"
+    type="text/css">
   <link href="css/normalize.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
 </head>
@@ -116,116 +116,127 @@
         </form>
       </section>
       <section class="catalog">
-        <h2 class="visually-hidden">
-          Результаты поиска
-        </h2>
-        <div class="search-settings">
-          <span class="result-search">
-            <b>
-              Найдено: 3
-            </b>
-          </span>
-          <div class="sort">
-            <strong>Сортировка:</strong>
-            <ul class="sort-types">
-              <li class="sort-type-current">
-                <a href="#">
-                  По цене
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  По типу
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  По рейтингу
-                </a>
-              </li>
-            </ul>
-            <ul class="sort-up-down">
-              <li class="sort-column-current"><a href="#">&#9660;<span class="visually-hidden">По убыванию</span></a>
-              </li>
-              <li><a href="#">&#9650;<span class="visually-hidden">По возрастанию</span></a></li>
-            </ul>
+        <div class="catalog-container">
+          <h2 class="visually-hidden">
+            Результаты поиска
+          </h2>
+          <div class="search-settings">
+            <span class="result-search">
+              <b>
+                Найдено: 3
+              </b>
+            </span>
+            <div class="sort">
+              <strong class="sort-name">Сортировка:</strong>
+              <ul class="sort-types">
+                <li class="sort-type-current">
+                  <a href="#">
+                    По цене
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    По типу
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    По рейтингу
+                  </a>
+                </li>
+              </ul>
+              <ul class="sort-up-down">
+                <li>
+                  <a class="sort-up" href="#">
+                    &#9650;
+                    <span class="visually-hidden">По возрастанию</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="sort-down sort-column-current" href="#">
+                    &#9660;
+                    <span class="visually-hidden">По убыванию</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
 
-        <ul class="catalog-list">
-          <li class="catalog-item catalog-item-amara">
-            <div class="catalog-item-info">
-              <div class="catalog-item-setting-container">
-                <h3 class="catalog-item-headline">
-                  Amara Resort & Spa
-                </h3>
-                <p class="catalog-item-text catalog-item-type">
-                  Гостиница
-                </p>
-                <p class="catalog-item-text catalog-item-price">
-                  От 4000 Р.
-                </p>
-                <div class="catalog-item-buttons">
-                  <button class="button-catalog details">
-                    Подробнее
-                  </button>
-                  <button class="button-catalog to-book">
-                    Забронировать
-                  </button>
+          <ul class="catalog-list">
+            <li class="catalog-item catalog-item-amara">
+              <div class="catalog-item-info">
+                <div class="catalog-item-setting-container">
+                  <h3 class="catalog-item-headline">
+                    Amara Resort & Spa
+                  </h3>
+                  <p class="catalog-item-text catalog-item-type">
+                    Гостиница
+                  </p>
+                  <p class="catalog-item-text catalog-item-price">
+                    От 4000 Р.
+                  </p>
+                  <div class="catalog-item-buttons">
+                    <button class="button-catalog details">
+                      Подробнее
+                    </button>
+                    <button class="button-catalog to-book">
+                      Забронировать
+                    </button>
+                  </div>
                 </div>
+                <p class="catalog-item-rating rating-four">Рейтинг: 8.5</p>
               </div>
-              <p class="catalog-item-rating">Рейтинг: 8.5</p>
-            </div>
-          </li>
-          <li class="catalog-item catalog-item-desert">
-            <div class="catalog-item-info">
-              <div class="catalog-item-setting-container">
-                <h3 class="catalog-item-headline">
-                  Desert Quail Inn
-                </h3>
-                <p class="catalog-item-text catalog-item-type">
-                  Мотель
-                </p>
-                <p class="catalog-item-text catalog-item-price">
-                  От 3000 Р.
-                </p>
-                <div class="catalog-item-buttons">
-                  <button class="button-catalog details">
-                    Подробнее
-                  </button>
-                  <button class="button-catalog to-book">
-                    Забронировать
-                  </button>
+            </li>
+            <li class="catalog-item catalog-item-desert">
+              <div class="catalog-item-info">
+                <div class="catalog-item-setting-container">
+                  <h3 class="catalog-item-headline">
+                    Desert Quail Inn
+                  </h3>
+                  <p class="catalog-item-text catalog-item-type">
+                    Мотель
+                  </p>
+                  <p class="catalog-item-text catalog-item-price">
+                    От 3000 Р.
+                  </p>
+                  <div class="catalog-item-buttons">
+                    <button class="button-catalog details">
+                      Подробнее
+                    </button>
+                    <button class="button-catalog to-book">
+                      Забронировать
+                    </button>
+                  </div>
                 </div>
+                <p class="catalog-item-rating rating-three">Рейтинг: 8.9</p>
               </div>
-              <p class="catalog-item-rating">Рейтинг: 8.9</p>
-            </div>
-          </li>
-          <li class="catalog-item catalog-item-villas">
-            <div class="catalog-item-info">
-              <div class="catalog-item-setting-container">
-                <h3 class="catalog-item-headline">
-                  Villas at Poco Diablo
-                </h3>
-                <p class="catalog-item-text catalog-item-type">
-                  Апартаменты
-                </p>
-                <p class="catalog-item-text catalog-item-price">
-                  От 2000 Р.
-                </p>
-                <div class="catalog-item-buttons">
-                  <button class="button-catalog details">
-                    Подробнее
-                  </button>
-                  <button class="button-catalog to-book">
-                    Забронировать
-                  </button>
+            </li>
+            <li class="catalog-item catalog-item-villas">
+              <div class="catalog-item-info">
+                <div class="catalog-item-setting-container">
+                  <h3 class="catalog-item-headline">
+                    Villas at Poco Diablo
+                  </h3>
+                  <p class="catalog-item-text catalog-item-type">
+                    Апартаменты
+                  </p>
+                  <p class="catalog-item-text catalog-item-price">
+                    От 2000 Р.
+                  </p>
+                  <div class="catalog-item-buttons">
+                    <button class="button-catalog details">
+                      Подробнее
+                    </button>
+                    <button class="button-catalog to-book">
+                      Забронировать
+                    </button>
+                  </div>
                 </div>
+                <p class="catalog-item-rating rating-two">Рейтинг: 9.2</p>
               </div>
-              <p class="catalog-item-rating">Рейтинг: 9.2</p>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
